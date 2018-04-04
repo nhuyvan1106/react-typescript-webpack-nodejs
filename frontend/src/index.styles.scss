@@ -1,0 +1,27 @@
+@font-face {
+    src: url('./fontawesome.woff2');
+    font-family: 'FontAwesome';
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Roboto;
+    height: 100vh;
+}
+
+#root {
+    height: 100vh;
+}
+
+.app-icon {
+    display: inline-block;
+    &:before, &:after {
+        display: inline-block;
+        font: normal normal normal 14px/1 FontAwesome;
+        font-size: inherit;
+        text-rendering: auto;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+    }
+}
